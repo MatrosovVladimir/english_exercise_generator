@@ -1,7 +1,6 @@
 import pandas as pd
 import spacy
 import string
-import os
 
 from nltk.tokenize import sent_tokenize
 from googletrans import Translator
@@ -13,11 +12,7 @@ import gensim.downloader as api
 import requests
 
 # Предобученная модель spacy
-model_dir = 'C:\Users\matro\anaconda3\lib\site-packages'
-model_name = 'en_core_web_sm'
-model_path = os.path.join(model_dir, model_name)
-
-nlp = spacy.load(model_path)
+nlp = spacy.load("en_core_web_sm")
 
 # Предобученная модель word2vec-ruscorpora-300 c gensim
 modelru = api.load("word2vec-ruscorpora-300")
