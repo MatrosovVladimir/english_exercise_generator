@@ -1,6 +1,6 @@
 gensim==4.1.2
 googletrans==4.0.0rc1
-nltk==3.7
+nltk==3.8.1
 pandas==1.4.4
 Pillow==9.2.0
 Requests==2.31.0
