@@ -12,7 +12,11 @@ import gensim.downloader as api
 import requests
 
 # Предобученная модель spacy
-nlp = spacy.load("en_core_web_sm")
+model_dir = 'C:\Users\matro\anaconda3\lib\site-packages'
+model_name = 'en_core_web_sm'
+model_path = os.path.join(model_dir, model_name)
+
+nlp = spacy.load(model_path)
 
 # Предобученная модель word2vec-ruscorpora-300 c gensim
 modelru = api.load("word2vec-ruscorpora-300")
