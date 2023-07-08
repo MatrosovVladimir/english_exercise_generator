@@ -4,6 +4,7 @@ import string
 import nltk
 nltk.download('punkt')
 nltk.download('wordnet')
+nltk.download('omw')
 
 from nltk.tokenize import sent_tokenize
 from googletrans import Translator
