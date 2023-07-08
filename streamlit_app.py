@@ -11,7 +11,7 @@ from exercise_generator import TextToDataFrame, DictionaryCreator, ExerciseGener
 api_key = 'dict.1.1.20230629T105549Z.fb37ebf7609e3a28.23abdd368ee0f4b1fe26c9f8d9b4d3097fab27a7'
 
 # Определяем функцию для загрузки данных из текста
-# @st.cache
+@st.cache_data
 def creating_a_dictionary_and_exercises(text):
     """
     Функция для загрузки данных из текста.
