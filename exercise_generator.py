@@ -7,6 +7,8 @@ nltk.download('wordnet')
 
 from nltk.tokenize import sent_tokenize
 from googletrans import Translator
+
+import word_forms
 from word_forms.word_forms import get_word_forms
 
 import random
