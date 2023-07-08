@@ -3,6 +3,7 @@ import spacy
 import string
 import nltk
 nltk.download('punkt')
+nltk.download('wordnet')
 
 from nltk.tokenize import sent_tokenize
 from googletrans import Translator
