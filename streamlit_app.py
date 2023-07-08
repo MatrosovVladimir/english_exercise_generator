@@ -10,6 +10,7 @@ from exercise_generator import TextToDataFrame, DictionaryCreator, ExerciseGener
 # Задаем ключ API для доступа к словарю
 api_key = 'dict.1.1.20230629T105549Z.fb37ebf7609e3a28.23abdd368ee0f4b1fe26c9f8d9b4d3097fab27a7'
 
+!python -m spacy download en_core_web_sm
 
 # Определяем функцию для загрузки данных из текста
 @st.cache_data
