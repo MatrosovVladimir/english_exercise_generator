@@ -1,6 +1,8 @@
 import pandas as pd
 import spacy
 import string
+import nltk
+nltk.download('punkt')
 
 from nltk.tokenize import sent_tokenize
 from googletrans import Translator
