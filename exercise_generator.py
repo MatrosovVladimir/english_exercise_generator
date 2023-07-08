@@ -12,7 +12,8 @@ import gensim.downloader as api
 import requests
 
 # Предобученная модель spacy
-nlp = spacy.load("en_core_web_sm")
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 
 # Предобученная модель word2vec-ruscorpora-300 c gensim
 modelru = api.load("word2vec-ruscorpora-300")
