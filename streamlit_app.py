@@ -45,6 +45,7 @@ def creating_a_dictionary_and_exercises(text):
     # Возвращаем датафреймы с упражнениями и словарем
     return english_exercises_df, dictionary_df
 
+st.set_page_config(page_title="English exercise generator")
 
 # Создаем виджет для загрузки файлов
 uploaded_file = st.file_uploader("Загрузите текстовый файл", type=["txt"])
