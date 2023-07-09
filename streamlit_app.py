@@ -8,7 +8,7 @@ from io import BytesIO
 from exercise_generator import TextToDataFrame, DictionaryCreator, ExerciseGenerator
 
 # Задаем ключ API для доступа к словарю
-api_key = API_KEY
+api_key = st.secrets["API_KEY"]
 
 # Определяем функцию для загрузки данных из текста
 @st.cache_data
