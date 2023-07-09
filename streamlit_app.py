@@ -7,8 +7,6 @@ from io import BytesIO
 # Импортируем классы из файла exercise_generator
 from exercise_generator import TextToDataFrame, DictionaryCreator, ExerciseGenerator
 
-st.set_page_config(page_title="English exercise generator")
-
 # Задаем ключ API для доступа к словарю
 api_key = st.secrets["API_KEY"]
 
@@ -47,6 +45,7 @@ def creating_a_dictionary_and_exercises(text):
     # Возвращаем датафреймы с упражнениями и словарем
     return english_exercises_df, dictionary_df
 
+st.title("English exercise generator")
 
 # Создаем виджет для загрузки файлов
 uploaded_file = st.file_uploader("Загрузите текстовый файл", type=["txt"])
